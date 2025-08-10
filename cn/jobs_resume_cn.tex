@@ -1,0 +1,56 @@
+% =============================================================
+% jobs_resume_cn.tex – 中文求职简历
+% -------------------------------------------------------------
+% 使用 rSection 环境并从 experience_pool_cn.tex 中调用
+% 经历内容块。
+% =============================================================
+\documentclass[11pt]{resume_cn}
+
+\usepackage[a4paper]{geometry}
+\usepackage{fontspec}
+
+\geometry{
+	top=1cm, % Top margin
+	bottom=1cm, % Bottom margin
+	left=1cm, % Left margin
+	right=1cm, % Right margin
+	% showframe, % Uncomment to show how the type block is set on the page
+}
+
+% ---------- 内容池 ----------
+\input{experience_pool_cn}
+
+% ---------- 个人信息 ----------
+\name{董金宇}
+\address{英国剑桥 \addressSep  jinyu.d.dong@gmail.com \addressSep 
+\href{https://www.linkedin.com/in/jinyu-dong-9ba440197/}{linkedin.com/in/jinyu-dong-9ba440197}}
+
+\begin{document}
+
+\begin{rSection}{教育背景}
+    \useExperience{edu-cam-mengproj-2021-2025-cn}
+\end{rSection}
+
+% ================= 荣誉奖项 =====================
+\begin{rSection}{主要荣誉与奖项}
+  \useExperience{awards-cn}
+\end{rSection}
+
+\begin{rSection}{研究经历}
+  \useExperiences{research-ucl-2025-jobs-cn}
+  \useExperiences{research-ucdavis-2024-jobs-cn}
+\end{rSection}
+
+\begin{rSection}{工业经历}
+  \useExperiences{exp-mercedes-2023-2024-jobs-cn,exp-huawei-2022-jobs-cn}
+\end{rSection}
+
+\begin{rSection}{发表文章}
+  \useExperience{publications-cn}
+\end{rSection}
+
+\begin{rSection}{技能}
+  \useExperience{skills-software-cn}
+\end{rSection}
+
+\end{document}

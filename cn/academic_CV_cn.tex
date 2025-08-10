@@ -1,0 +1,62 @@
+% =============================================================
+% academic_CV_cn.tex – 中文学术简历
+% =============================================================
+\documentclass[11pt]{resume_cn}
+
+\usepackage[a4paper]{geometry}
+\usepackage{fontspec}
+
+\geometry{
+	top=1cm,
+	bottom=1cm,
+	left=1cm,
+	right=1cm,
+}
+
+% ---------- 内容池 ----------
+\input{experience_pool_cn}
+
+% ---------- 个人信息 ----------
+\name{董金宇}
+\address{英国剑桥 \addressSep  jinyu.d.dong@gmail.com \addressSep 
+\href{https://www.linkedin.com/in/jinyu-dong-9ba440197/}{linkedin.com/in/jinyu-dong-9ba440197}}
+
+\begin{document}
+
+\begin{rSection}{教育背景}
+    \useExperience{edu-cam-mengproj-2021-2025-cn}
+\end{rSection}
+
+\begin{rSection}{研究经历}
+  \useExperiences{research-cblab-2024-2025-cn}
+  \useExperiences{research-ucdavis-2024-cn}
+  \useExperiences{research-ucl-2025-cn}
+  \useExperiences{research-hku-choy-2021-cn}
+  \useExperiences{research-hku-lai-2020-cn}
+\end{rSection}
+
+\begin{rSection}{工业经历}
+  \useExperiences{exp-mercedes-2023-2024-cn}
+  \useExperiences{exp-huawei-2022-cn}
+  \useExperiences{industry-alpha-2021-cn}
+\end{rSection}
+
+\begin{rSection}{发表文章}
+  \useExperience{publications-cn}
+\end{rSection}
+
+\begin{rSection}{荣誉奖项}
+  \useExperience{awards-all-cn}
+\end{rSection}
+
+\begin{rSection}{其他经历}
+  \useExperiences{other-ceu-2024-cn}
+  \useExperiences{other-idp-2021-cn}
+  \useExperiences{other-ta-2020-cn}
+\end{rSection}
+
+\begin{rSection}{技能与兴趣}
+  \useExperience{skills-interests-cn}
+\end{rSection}
+
+\end{document}
