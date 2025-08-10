@@ -1,0 +1,59 @@
+% =============================================================
+% resume-main.tex – comprehensive version (ALL variants)
+% -------------------------------------------------------------
+% Uses rSection environment and pulls every experience block
+% defined in experience_pool.tex.
+% =============================================================
+\documentclass[11pt]{resume}
+
+\usepackage[a4paper]{geometry}  % ← Add this line
+\usepackage{ebgaramond}
+
+\geometry{
+	top=1cm, % Top margin
+	bottom=1cm, % Bottom margin
+	left=1cm, % Left margin
+	right=1cm, % Right margin
+	% showframe, % Uncomment to show how the type block is set on the page
+}
+
+% ---------- Content pool ----------
+\input{experience_pool}
+
+% ---------- Personal header ----------
+\name{Jinyu Dong}
+\address{Cambridge, UK \addressSep  jinyu.d.dong@gmail.com \addressSep 
+\href{https://www.linkedin.com/in/jinyu-dong-9ba440197/}{linkedin.com/in/jinyu-dong-9ba440197}}
+% \addressSep 
+% \href{https://github.com/derek1909}{github.com/derek1909}}
+
+\begin{document}
+
+\begin{rSection}{Education}
+    \useExperience{edu-cam-mengproj-2021-2025-sre}
+\end{rSection}
+
+\begin{rSection}{Industry Experience}
+  \useExperiences{exp-mercedes-2023-2024-sre,exp-huawei-2022-jobs}
+\end{rSection}
+
+\begin{rSection}{Research Experience}
+  \useExperiences{research-ucl-2025-jobs}
+  \useExperiences{research-ucdavis-2024-jobs}
+\end{rSection}
+
+\begin{rSection}{Publications}
+  \useExperience{publications}
+\end{rSection}
+
+\begin{rSection}{Selected Honors \& Awards}
+  \useExperience{awards}
+\end{rSection}
+
+\begin{rSection}{Skills}
+  \useExperience{skills-sre}
+\end{rSection}
+
+
+
+\end{document}
