@@ -40,3 +40,5 @@ archive/*/
 # Temporary files
 *.tmp
 *.temp
+
+/built-pdf
